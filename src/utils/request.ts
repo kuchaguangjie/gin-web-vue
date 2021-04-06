@@ -5,7 +5,8 @@ import { IdempotenceModule } from '@/store/modules/idempotence'
 
 const service = axios.create({
   // baseURL: process.env.VUE_APP_BASE_API, // url = base url + request url
-  baseURL: "http://127.0.0.1:10000/api/v1",
+  // baseURL: "http://127.0.0.1:10000/api/v1",
+  baseURL: "http://127.0.0.1:9000/api/v1", // through nginx, to fix CORS,
   timeout: 5000
   // withCredentials: true // send cookies when cross-domain requests
 })
